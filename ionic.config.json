@@ -1,6 +1,8 @@
 {
   "name": "gardenJournal",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "9ef1fbac"
 }
