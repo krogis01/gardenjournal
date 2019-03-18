@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import request = require('request-promise-native');
 
 @Component({
   selector: 'app-home',
@@ -9,18 +8,23 @@ import request = require('request-promise-native');
 export class HomePage {
   public user_zip_code: any;
 
-  sendRequest() {
+  getHardinessZone() {
+    const xhttp = new XMLHttpRequest();
     const zoneUrl = `https://c0bra.api.stdlib.com/zipcode-to-hardiness-zone/?zipcode=${this.user_zip_code}`;
-    let returnedHtml = '';
-    // alert(zoneUrl);
+    // const plantDatesUrl = `https://www.almanac.com/gardening/planting-calendar/zipcode/${this.user_zip_code}`;
+    xhttp.open("GET", zoneUrl, true);
+    xhttp.send();
 
-    request(zoneUrl).then(function(htmlString) {
-      returnedHtml = htmlString;
-    }).catch(function(err) {
-      returnedHtml = 'Sorry, we could not find your zone';
-    });
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        alert(`You are in hardiness zone ${JSON.parse(this.responseText)['zone']}!`);
+      }
+    }
 
-    alert(returnedHtml);
-    return returnedHtml;
+    return true;
   }
 }
+
+// REGEX EXPRESSIONS FOR ALMANAC
+// vegetable NAMES with links: www\.almanac\.com\/plant\/[^"]*
+// 
