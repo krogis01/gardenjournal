@@ -1,0 +1,139 @@
+
+{
+    "beans": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "32",
+                "C": "0"
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "no",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "yes",
+            "seedling_days_after_frost": [],
+            "days_after_frost": [7, 28]
+        },
+        "water_reqs": {
+            "min_water": "1",
+            "max_water": "1.5"
+        },
+        "sun_reqs": {
+            "sun_preference": "sun"
+        },
+        "growth_info": {
+            "days_to_germination": "10",
+            "days_to_harvest": "60",
+            "height": "12",
+            "width": "12",
+            "soil_texture": ["fine, medium"]
+        },
+        "companions": ["array of friends"]
+    },
+    "beets": "",
+    "bell_pepper": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "55",
+                "C": "13"
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "yes",
+            "days_before_frost": [70, 56]
+        },
+        "outdoors": {
+            "outdoors": "yes",
+            "seedling_days_after_frost": [14, 35],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "2",
+            "max_water": "3"
+        },
+        "sun_reqs": {
+            "sun_preference": "sun"
+        },
+        "growth_info": {
+            "days_to_germination": "10",
+            "days_to_harvest": "80",
+            "height": "12",
+            "width": "12",
+            "soil_texture": ["fine, medium"]
+        },
+        "companions": ["array of friends"]
+    },
+    "broccoli": "",
+    "brussels_sprout": "",
+    "cabbage": "",
+    "cantaloupe": "",
+    "carrot": "",
+    "cauliflower": "",
+    "celery": "",
+    "collard": "",
+    "corn": "",
+    "cucumber": "",
+    "eggplant": "",
+    "lettuce": "",
+    "kohlrabi": "",
+    "leek": "",
+    "okra": "",
+    "onion": "",
+    "parsnip": "",
+    "peas": "",
+    "potato": "",
+    "pumpkin": "",
+    "radish": "",
+    "spinach": "",
+    "squash": "aka zucchini",
+    "sweet_potato": "",
+    "swiss_chard": "",
+    "tomato": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "32",
+                "C": "0"
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "yes",
+            "days_before_frost": [56, 42]
+        },
+        "outdoors": {
+            "outdoors": "yes",
+            "seedling_days_after_frost": [7, 28],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "2.5",
+            "max_water": "3"
+        },
+        "sun_reqs": {
+            "sun_preference": "sun"
+        },
+        "growth_info": {
+            "days_to_germination": "# of days",
+            "days_to_harvest": "# of days",
+            "height": "",
+            "width": "",
+            "soil_texture": ["fine, medium"]
+        },
+        "companions": ["array of friends"]
+    },
+    "turnip": "",
+    "watermelon": ""
+}
