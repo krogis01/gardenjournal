@@ -36,7 +36,42 @@
         },
         "companions": ["array of friends"]
     },
-    "beets": "",
+    "beets": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
     "bell_pepper": {
         "temperature_reqs": {
             "min_temp": {
@@ -73,31 +108,906 @@
         },
         "companions": ["array of friends"]
     },
-    "broccoli": "",
-    "brussels_sprout": "",
-    "cabbage": "",
-    "cantaloupe": "",
-    "carrot": "",
-    "cauliflower": "",
-    "celery": "",
-    "collard": "",
-    "corn": "",
-    "cucumber": "",
-    "eggplant": "",
-    "lettuce": "",
-    "kohlrabi": "",
-    "leek": "",
-    "okra": "",
-    "onion": "",
-    "parsnip": "",
-    "peas": "",
-    "potato": "",
-    "pumpkin": "",
-    "radish": "",
-    "spinach": "",
-    "squash": "aka zucchini",
-    "sweet_potato": "",
-    "swiss_chard": "",
+    "broccoli": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "brussels_sprout": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "cabbage": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "cantaloupe": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "carrot": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "cauliflower": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "celery": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "collard": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "corn": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "cucumber": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "eggplant": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "lettuce": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "kohlrabi": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "leek": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "okra": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "onion": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "parsnip": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "peas": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "potato": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "pumpkin": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "radish": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "spinach": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "squash": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "sweet_potato": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "swiss_chard": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
     "tomato": {
         "temperature_reqs": {
             "min_temp": {
@@ -134,6 +1044,76 @@
         },
         "companions": ["array of friends"]
     },
-    "turnip": "",
-    "watermelon": ""
+    "turnip": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    },
+    "watermelon": {
+        "temperature_reqs": {
+            "min_temp": {
+                "F": "",
+                "C": ""
+            },
+            "max_temp": {
+                "F": "",
+                "C": ""
+            }
+        },
+        "indoors": {
+            "start_indoors": "",
+            "days_before_frost": []
+        },
+        "outdoors": {
+            "outdoors": "",
+            "seedling_days_after_frost": [],
+            "days_after_frost": []
+        },
+        "water_reqs": {
+            "min_water": "",
+            "max_water": ""
+        },
+        "sun_reqs": {
+            "sun_preference": ""
+        },
+        "growth_info": {
+            "days_to_germination": "",
+            "days_to_harvest": "",
+            "height": "",
+            "width": "",
+            "soil_texture": []
+        },
+        "companions": ["array of friends"]
+    }
 }
