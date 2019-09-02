@@ -17,7 +17,7 @@
         },
         "outdoors": {
             "outdoors": "yes",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": [7, 28]
         },
         "water_reqs": {
@@ -53,7 +53,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -89,7 +89,7 @@
         },
         "outdoors": {
             "outdoors": "yes",
-            "seedling_days_after_frost": [14, 35],
+            "transplant_seedling_days_after_frost": [14, 35],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -125,7 +125,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -161,7 +161,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -197,7 +197,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -233,7 +233,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -269,7 +269,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -305,7 +305,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -341,7 +341,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -377,7 +377,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -413,7 +413,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -449,7 +449,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -485,7 +485,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -521,7 +521,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -557,7 +557,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -593,7 +593,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -629,7 +629,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -665,7 +665,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -701,7 +701,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -737,7 +737,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -773,7 +773,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -809,7 +809,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -845,7 +845,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -881,7 +881,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -917,7 +917,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -953,7 +953,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -989,7 +989,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -1025,7 +1025,7 @@
         },
         "outdoors": {
             "outdoors": "yes",
-            "seedling_days_after_frost": [7, 28],
+            "transplant_seedling_days_after_frost": [7, 28],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -1061,7 +1061,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {
@@ -1097,7 +1097,7 @@
         },
         "outdoors": {
             "outdoors": "",
-            "seedling_days_after_frost": [],
+            "transplant_seedling_days_after_frost": [],
             "days_after_frost": []
         },
         "water_reqs": {

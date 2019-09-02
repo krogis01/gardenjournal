@@ -41,10 +41,98 @@ const getFrostDates = async(zip) => {
     return frostDateInfo;
 }
 
+const findLastSpringFrostDate = (frostDates) => {
+  let springFrostDate;
+
+  if (frostDates) {
+    const month = frostDates.last_spring_frost.slice(0,3);
+    const date = frostDates.last_spring_frost.slice(-2);
+    const months = {
+      "Jan": 0,
+      "Feb": 1,
+      "Mar": 2,
+      "Apr": 3,
+      "May": 4,
+      "Jun": 5,
+      "Jul": 6,
+      "Aug": 7,
+      "Sep": 8,
+      "Oct": 9,
+      "Nov": 10,
+      "Dec": 11
+    };
+
+    springFrostDate = new Date();
+    springFrostDate.setMonth(months[month]);
+    springFrostDate.setDate(date);
+  } else {
+    console.log(`Invalid frostDates info was passed in: ${frostDates}`);
+  }
+
+  return springFrostDate;
+}
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
+
+const findVegetableStartDates = (vegetableInfo, springFrostDate) => {
+  let startVegetableDates = {
+    startIndoorsDates: {},
+    transplantOutdoorsDates: {},
+    startOutdoorsDates: {}
+  };
+
+  Object.keys(vegetableInfo).map((vegetable) => {
+    if (vegetableInfo[vegetable].indoors.days_before_frost.length > 1) {
+      startVegetableDates.startIndoorsDates[vegetable] = [];
+
+      vegetableInfo[vegetable].indoors.days_before_frost.map((dateOptions) => {
+        const vegetableDate = new Date(springFrostDate);
+        const newDate = vegetableDate.getDate() - dateOptions;
+        vegetableDate.setDate(newDate);
+        startVegetableDates.startIndoorsDates[vegetable].push(vegetableDate);
+    
+        return vegetableDate;
+      });
+    
+      console.log(`You should start your ${vegetable} inside between ${startVegetableDates.startIndoorsDates[vegetable][0]} and ${startVegetableDates.startIndoorsDates[vegetable][1]}`);
+    }
+
+    if (vegetableInfo[vegetable].outdoors.transplant_seedling_days_after_frost.length > 1) {
+      startVegetableDates.transplantOutdoorsDates[vegetable] = [];
+
+      vegetableInfo[vegetable].outdoors.transplant_seedling_days_after_frost.map((dateOptions) => {
+        const vegetableDate = new Date(springFrostDate);
+        const newDate = vegetableDate.getDate() + dateOptions;
+        vegetableDate.setDate(newDate);
+        startVegetableDates.transplantOutdoorsDates[vegetable].push(vegetableDate);
+    
+        return vegetableDate;
+      });
+    
+      console.log(`You should move your ${vegetable} outside between ${startVegetableDates.transplantOutdoorsDates[vegetable][0]} and ${startVegetableDates.transplantOutdoorsDates[vegetable][1]}`);
+    }
+
+    if (vegetableInfo[vegetable].outdoors.days_after_frost.length > 1) {
+      startVegetableDates.startOutdoorsDates[vegetable] = [];
+
+      vegetableInfo[vegetable].outdoors.days_after_frost.map((dateOptions) => {
+        const vegetableDate = new Date(springFrostDate);
+        const newDate = vegetableDate.getDate() + dateOptions;
+        vegetableDate.setDate(newDate);
+        startVegetableDates.startOutdoorsDates[vegetable].push(vegetableDate);
+    
+        return vegetableDate;
+      });
+    
+      console.log(`You should start your ${vegetable} seeds outside between ${startVegetableDates.startOutdoorsDates[vegetable][0]} and ${startVegetableDates.startOutdoorsDates[vegetable][1]}`);
+    }
+  });
+
+  return startVegetableDates;
+}
   
 rl.question('What is your zip code?', async(answer) => {
   const zone = await getHardinessZone(answer);
@@ -53,45 +141,11 @@ rl.question('What is your zip code?', async(answer) => {
   const frostDates = await getFrostDates(answer);
   console.log(`Your frost information is: ${JSON.stringify(frostDates)}`);
 
-  const month = frostDates.last_spring_frost.slice(0,3);
-  const date = frostDates.last_spring_frost.slice(-2);
-
-  const months = {
-    "Jan": 0,
-    "Feb": 1,
-    "Mar": 2,
-    "Apr": 3,
-    "May": 4,
-    "Jun": 5,
-    "Jul": 6,
-    "Aug": 7,
-    "Sep": 8,
-    "Oct": 9,
-    "Nov": 10,
-    "Dec": 11
-  };
-
-  let springFrostDate = new Date();
-  springFrostDate.setMonth(months[month]);
-  springFrostDate.setDate(date);
-
+  const springFrostDate = findLastSpringFrostDate(frostDates);
   console.log(`Last Spring Frost: ${springFrostDate}`);
-  let startIndoorsDates = [];
 
-  Object.keys(vegetableInfo).map((vegetable) => {
-    if (vegetableInfo[vegetable].indoors.days_before_frost.length > 1) {
-      vegetableInfo[vegetable].indoors.days_before_frost.map((dateOptions) => {
-        const vegetableDate = new Date(springFrostDate);
-        const newDate = vegetableDate.getDate() - dateOptions;
-        vegetableDate.setDate(newDate);
-        startIndoorsDates.push(vegetableDate);
-    
-        return vegetableDate;
-      });
-    
-      console.log(`You should start your ${vegetable} between ${startIndoorsDates[0]} and ${startIndoorsDates[1]}`);
-    }
-  });
+  const startVegetableInfo = findVegetableStartDates(vegetableInfo, springFrostDate);
+  console.log(JSON.stringify(startVegetableInfo));
   
   rl.close();
 });
