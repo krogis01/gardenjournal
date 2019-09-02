@@ -1,6 +1,8 @@
 const readline = require('readline');
 const rpn = require("request-promise-native");
 const vegetableInfo = require('./vegetableInfo.json');
+
+require('dotenv').config();
   
 const getHardinessZone = async(zip) => {
   let zone;
@@ -133,6 +135,38 @@ const findVegetableStartDates = (vegetableInfo, springFrostDate) => {
 
   return startVegetableDates;
 }
+
+const getWeatherLocation = async(zip) => {
+  let locationKey;
+  const locationKeyUrl = `http://dataservice.accuweather.com/locations/v1/postalcodes/search?q=${zip}&apikey=${process.env.weatherapikey}`;
+  
+  await rpn(locationKeyUrl, (error, response, body) => {
+    if (response.statusCode === 200) {
+        locationKey = JSON.parse(body)[0].Key;
+    } else {
+        console.log(error);
+        console.log('Invalid Request. Please try again.');
+    }
+  });
+
+  return locationKey;
+}
+
+const getWeatherInfo = async(locationKey) => {
+  let weatherInfo;
+  const weatherInfoUrl = `http://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey}?apikey=${process.env.weatherapikey}`;
+  
+  await rpn(weatherInfoUrl, (error, response, body) => {
+    if (response.statusCode === 200) {
+        weatherInfo = JSON.parse(body);
+    } else {
+        console.log(error);
+        console.log('Invalid Request. Please try again.');
+    }
+  });
+
+  return weatherInfo;
+}
   
 rl.question('What is your zip code?', async(answer) => {
   const zone = await getHardinessZone(answer);
@@ -146,6 +180,15 @@ rl.question('What is your zip code?', async(answer) => {
 
   const startVegetableInfo = findVegetableStartDates(vegetableInfo, springFrostDate);
   console.log(JSON.stringify(startVegetableInfo));
+
+  const weatherLocationKey = await getWeatherLocation(answer);
+  const todayWeatherInfo = await getWeatherInfo(weatherLocationKey);
+  console.log(todayWeatherInfo.DailyForecasts);
+  // if (todayWeatherInfo.DailyForecasts.Day.HasPrecipitation === true || todayWeatherInfo.DailyForecasts.Night.HasPrecipitation === true) {
+  //   append 'it rained today' value to DB
+  // }
+
+  // send notification reminders every 2 days (default) to check garden - if rained is in DB, update notification
   
   rl.close();
 });
