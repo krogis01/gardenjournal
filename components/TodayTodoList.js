@@ -40,5 +40,3 @@ export default class TodayTodoList extends Component {
         )
     }
 }
-
-// console.log(`You should start your ${vegetable} inside between ${startVegetableDates.startIndoorsDates[vegetable][0]} and ${startVegetableDates.startIndoorsDates[vegetable][1]}`);

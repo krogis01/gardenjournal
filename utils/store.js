@@ -81,7 +81,7 @@ let initialState = {
             },
             "companions": ["array of friends"]
         },
-        "bell_pepper": {
+        "bell pepper": {
             "temperature_reqs": {
                 "min_temp": {
                     "F": "55",
@@ -153,7 +153,7 @@ let initialState = {
             },
             "companions": ["array of friends"]
         },
-        "brussels_sprout": {
+        "brussels sprout": {
             "temperature_reqs": {
                 "min_temp": {
                     "F": "",
@@ -945,7 +945,7 @@ let initialState = {
             },
             "companions": ["array of friends"]
         },
-        "sweet_potato": {
+        "sweet potato": {
             "temperature_reqs": {
                 "min_temp": {
                     "F": "",
@@ -981,7 +981,7 @@ let initialState = {
             },
             "companions": ["array of friends"]
         },
-        "swiss_chard": {
+        "swiss chard": {
             "temperature_reqs": {
                 "min_temp": {
                     "F": "",
