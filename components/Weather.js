@@ -35,7 +35,7 @@ export default class Weather extends Component {
         return (
             <View>
                 <SearchForm />
-                <WeatherIcon />
+                <WeatherIcon {...this.state.weatherIcon}/>
             </View>
         )
     }

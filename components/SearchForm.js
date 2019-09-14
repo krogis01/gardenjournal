@@ -5,6 +5,7 @@ import {
     View
   } from 'react-native';
 import { getWeatherData } from '../utils/weatherApi';
+import { getFrostDates } from '../utils/frostDateInfo';
 import store from '../utils/store';
 
 export default class SearchForm extends Component {
@@ -28,14 +29,14 @@ export default class SearchForm extends Component {
         store.unsubscribe(this.updateState);
     }
 
-    handleChange(e) {
-        store.updateGlobalState({
-            searchValue: e.target.value
-        })
+    handleChange(text) {
+        store.updateGlobalState({searchValue: text});
     }
 
     handleClick() {
         getWeatherData();
+        getFrostDates();
+        this.handleChange(this.state.text);
     }
 
     render() {

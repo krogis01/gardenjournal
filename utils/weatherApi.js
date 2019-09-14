@@ -17,7 +17,6 @@ const getWeatherInfo = (locationKey) => {
 }
 
 const getWeatherData = () => {
-    console.log('hey');
     const zip = store.getGlobalState().searchValue;
     const url = `http://dataservice.accuweather.com/locations/v1/postalcodes/search?q=${zip}&apikey=9I6NvEyuq2Ob3kK4gBH0xykAt4kYGqRo`;
 
