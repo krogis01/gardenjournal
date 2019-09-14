@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 import { CheckBox } from 'react-native-elements';
 import store from '../utils/store';
 import { getFrostDates } from '../utils/frostDateInfo';
@@ -27,21 +27,20 @@ export default class TransplantOutdoorsCheckboxes extends Component {
     }
 
     render() {
+        let checkboxes = [];
+
         if (this.state.startVegetableDates['transplantOutdoorsDates']) {
             for (veggie in this.state.startVegetableDates['transplantOutdoorsDates']) {
-                const checkboxText = `You should move your ${veggie} seedlings outside between ${this.state.startVegetableDates['transplantOutdoorsDates'][veggie][0]} and ${this.state.startVegetableDates['transplantOutdoorsDates'][veggie][1]}`;
+                const checkboxText = `You should move your ${veggie} seeds outside between ${this.state.startVegetableDates['transplantOutdoorsDates'][veggie][0]} and ${this.state.startVegetableDates['transplantOutdoorsDates'][veggie][1]}`;
 
-                return (
-                    <CheckBox
-                        title={checkboxText}
-                        checked={this.state.checked}
-                    />
-                )
+                checkboxes.push(<CheckBox key={veggie} title={checkboxText} checked={this.state.checked}/>);
             }
         } else {
-            return (
-                <Text></Text>
-            )
+            checkboxes.push(<Text>test</Text>);
         }
+
+        console.log(checkboxes);
+
+        return (<View>{checkboxes}</View>);
     }
 }

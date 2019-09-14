@@ -81,7 +81,7 @@ const findLastSpringFrostDate = () => {
         });      
       }
     });
-  
+
     store.updateGlobalState({startVegetableDates}, JSON.stringify(startVegetableDates));
   }
 
