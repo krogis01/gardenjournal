@@ -32,58 +32,80 @@ const findLastSpringFrostDate = () => {
     findVegetableStartDates(springFrostDate);
 }
 
-  const findVegetableStartDates = (springFrostDate) => {
-    vegetableInfo = store.getGlobalState().vegetableInfo;
+const addDays = (date, days) => {
+  let newDate = new Date(date.valueOf());
+  newDate.setDate(newDate.getDate() + days);
+  return newDate;
+}
 
-    let startVegetableDates = {
-      startIndoorsDates: {},
-      transplantOutdoorsDates: {},
-      startOutdoorsDates: {}
-    };
-  
-    Object.keys(vegetableInfo).map((vegetable) => {
-      if (vegetableInfo[vegetable].indoors.days_before_frost.length > 1) {
-        startVegetableDates.startIndoorsDates[vegetable] = [];
-  
-        vegetableInfo[vegetable].indoors.days_before_frost.map((dateOptions) => {
-          const vegetableDate = new Date(springFrostDate);
-          const newDate = vegetableDate.getDate() - dateOptions;
-          vegetableDate.setDate(newDate);
-          startVegetableDates.startIndoorsDates[vegetable].push(vegetableDate);
-      
-          return vegetableDate;
-        });
-      }
-  
-      if (vegetableInfo[vegetable].outdoors.transplant_seedling_days_after_frost.length > 1) {
-        startVegetableDates.transplantOutdoorsDates[vegetable] = [];
-  
-        vegetableInfo[vegetable].outdoors.transplant_seedling_days_after_frost.map((dateOptions) => {
-          const vegetableDate = new Date(springFrostDate);
-          const newDate = vegetableDate.getDate() + dateOptions;
-          vegetableDate.setDate(newDate);
-          startVegetableDates.transplantOutdoorsDates[vegetable].push(vegetableDate);
-      
-          return vegetableDate;
-        });
-      }
-  
-      if (vegetableInfo[vegetable].outdoors.days_after_frost.length > 1) {
-        startVegetableDates.startOutdoorsDates[vegetable] = [];
-  
-        vegetableInfo[vegetable].outdoors.days_after_frost.map((dateOptions) => {
-          const vegetableDate = new Date(springFrostDate);
-          const newDate = vegetableDate.getDate() + dateOptions;
-          vegetableDate.setDate(newDate);
-          startVegetableDates.startOutdoorsDates[vegetable].push(vegetableDate);
-      
-          return vegetableDate;
-        });      
-      }
-    });
+const getAllDatesBetween = (firstDate, lastDate) => {
+  let dateArray = [];
+  let currentDate = firstDate;
+  console.log(`Current Date: ${currentDate}`);
 
-    store.updateGlobalState({startVegetableDates}, JSON.stringify(startVegetableDates));
+  while (currentDate <= lastDate) {
+    dateArray.push(new Date(currentDate));
+    currentDate = addDays(currentDate, 1);
   }
+
+  return dateArray;
+}
+
+const findVegetableStartDates = (springFrostDate) => {
+  vegetableInfo = store.getGlobalState().vegetableInfo;
+
+  let startVegetableDates = {
+    startIndoorsDates: {},
+    transplantOutdoorsDates: {},
+    startOutdoorsDates: {}
+  };
+
+  Object.keys(vegetableInfo).map((vegetable) => {
+    if (vegetableInfo[vegetable].indoors.days_before_frost.length > 1) {
+      startVegetableDates.startIndoorsDates[vegetable] = [];
+
+      vegetableInfo[vegetable].indoors.days_before_frost.map((dateOptions) => {
+        const vegetableDate = new Date(springFrostDate);
+        const newDate = vegetableDate.getDate() - dateOptions;
+        vegetableDate.setDate(newDate);
+        startVegetableDates.startIndoorsDates[vegetable].push(vegetableDate);
+      });
+
+      const allDates = getAllDatesBetween(startVegetableDates.startIndoorsDates[vegetable][0], startVegetableDates.startIndoorsDates[vegetable][1]);
+      startVegetableDates.startIndoorsDates[vegetable] = allDates;
+    }
+
+    if (vegetableInfo[vegetable].outdoors.transplant_seedling_days_after_frost.length > 1) {
+      startVegetableDates.transplantOutdoorsDates[vegetable] = [];
+
+      vegetableInfo[vegetable].outdoors.transplant_seedling_days_after_frost.map((dateOptions) => {
+        const vegetableDate = new Date(springFrostDate);
+        const newDate = vegetableDate.getDate() + dateOptions;
+        vegetableDate.setDate(newDate);
+        startVegetableDates.transplantOutdoorsDates[vegetable].push(vegetableDate);
+      });
+
+      const allDates = getAllDatesBetween(startVegetableDates.transplantOutdoorsDates[vegetable][0], startVegetableDates.transplantOutdoorsDates[vegetable][1]);
+      startVegetableDates.transplantOutdoorsDates[vegetable] = allDates;
+    }
+
+    if (vegetableInfo[vegetable].outdoors.days_after_frost.length > 1) {
+      startVegetableDates.startOutdoorsDates[vegetable] = [];
+
+      vegetableInfo[vegetable].outdoors.days_after_frost.map((dateOptions) => {
+        const vegetableDate = new Date(springFrostDate);
+        const newDate = vegetableDate.getDate() + dateOptions;
+        vegetableDate.setDate(newDate);
+        startVegetableDates.startOutdoorsDates[vegetable].push(vegetableDate);
+      });    
+      
+      const allDates = getAllDatesBetween(startVegetableDates.startOutdoorsDates[vegetable][0], startVegetableDates.startOutdoorsDates[vegetable][1]);
+      startVegetableDates.startOutdoorsDates[vegetable] = allDates;
+    }
+  });
+
+  store.updateGlobalState({startVegetableDates}, JSON.stringify(startVegetableDates));
+}
 
 export {
     findLastSpringFrostDate
