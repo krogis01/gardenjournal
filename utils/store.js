@@ -1137,7 +1137,6 @@ class Store extends Emitter {
 
     updateGlobalState(changes) {
         state = Object.assign({}, state, changes);
-        // console.log(state.startVegetableDates);
         this.trigger('stateChange');
     }
 

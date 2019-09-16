@@ -41,7 +41,6 @@ const addDays = (date, days) => {
 const getAllDatesBetween = (firstDate, lastDate) => {
   let dateArray = [];
   let currentDate = firstDate;
-  console.log(`Current Date: ${currentDate}`);
 
   while (currentDate <= lastDate) {
     dateArray.push(new Date(currentDate));

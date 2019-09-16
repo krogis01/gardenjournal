@@ -36,13 +36,11 @@ export default class StartIndoorsCheckboxes extends Component {
                     actionDate = this.state.startVegetableDates['startIndoorsDates'][veggie][date];
                     todayDate = new Date();
                     todayDate.setMonth(4);
-                    console.log(todayDate);
                     formattedTodayDate = `${todayDate.getMonth()} ${todayDate.getDate()} ${todayDate.getFullYear()}`;
                     formattedActionDate = `${actionDate.getMonth()} ${actionDate.getDate()} ${actionDate.getFullYear()}`;
     
                     const checkboxText = `You should start your ${veggie} seeds inside between ${this.state.startVegetableDates['startIndoorsDates'][veggie][0]} and ${this.state.startVegetableDates['startIndoorsDates'][veggie][this.state.startVegetableDates['startIndoorsDates'][veggie].length-1]}`;
     
-                    console.log(formattedActionDate, formattedTodayDate)
                     if (formattedTodayDate === formattedActionDate) {
                         todayCheckboxes.push(<CheckBox key={veggie} title={checkboxText} checked={this.state.checked}/>);
                     }
@@ -52,25 +50,42 @@ export default class StartIndoorsCheckboxes extends Component {
             futureCheckboxes.push(<Text key='indoors-test'>You have nothing to start inside today.</Text>);
         }
 
-        if (todayCheckboxes.length > 0) {
+        if (todayCheckboxes.length > 0 && futureCheckboxes.length > 0) {
             return (
                 <View>
-                    <Text key='today'>Seeds to Start Inside Today</Text>
+                    <Text key='today'>Seeds to start inside today:</Text>
                     {todayCheckboxes}
 
-                    <Text key='upcoming'>Upcoming Seeds to Start Inside</Text>
+                    <Text key='upcoming'>Upcoming seeds to start inside:</Text>
                     {futureCheckboxes}
                 </View>
 
             );
+        } else if (todayCheckboxes.length > 0 && futureCheckboxes.length === 0) {
+            return (
+                <View>
+                    <Text key='today'>Seeds to start inside today:</Text>
+                    {todayCheckboxes}
+
+                    <Text key='upcoming'>You have no upcoming seeds to start inside.</Text>
+                    {futureCheckboxes}
+                </View>
+            )
+        } else if (todayCheckboxes.length === 0 && futureCheckboxes.length > 0) {
+            return (
+                <View>
+                    <Text key='today'>Seeds to start inside today:</Text>
+                    {todayCheckboxes}
+
+                    <Text key='upcoming'>Upcoming seeds to start inside:</Text>
+                    {futureCheckboxes}
+                </View>
+            )
         } else {
             return (
                 <View>
                     <Text key='today'>Today</Text>
-                    <Text key='nothing'>You have nothing to start inside today</Text>
-
-                    <Text key='upcoming'>Upcoming Seeds to Start Inside</Text>
-                    {futureCheckboxes}
+                    <Text key='nothing'>You have no seeds to start inside today or in the near future.</Text>
                 </View>
 
             );

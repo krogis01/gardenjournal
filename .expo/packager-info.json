@@ -1,9 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 738,
-  "expoServerNgrokUrl": "https://md-w87.anonymous.gardenjournal.exp.direct",
-  "packagerNgrokUrl": "https://packager.md-w87.anonymous.gardenjournal.exp.direct",
-  "ngrokPid": 764
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
+  "webpackServerPort": null
 }
